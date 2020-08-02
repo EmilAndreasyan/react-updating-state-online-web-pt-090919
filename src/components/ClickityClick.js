@@ -8,23 +8,7 @@ class ClickityClick extends React.Component {
       hasBeenClicked: false
     };
   }
-  
-  state ={
-  theme: 'blue',
-  addressInfo: {
-    street: null,
-    number: null,
-    city: null,
-    country: null
-  },
-}
 
-handleClick = () => {
-  this.setState({
-    addressInfo: {...this.state.addressInfo, city: 'New York'}
-  })
-}
-  
   handleClick = () => {
     this.setState({
       hasBeenClicked: true
